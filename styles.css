@@ -1,0 +1,114 @@
+/* Fundal cu gradient de sus în jos: verde combinat cu galben */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #3cb043, #ffeb3b); /* #3cb043 = verde, #ffeb3b = galben */
+  min-height: 100vh;
+}
+
+/* Meniu de navigare modern cu umbră */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #3cb043;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Secțiunea principală (home) cu imagine și umbră */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+
+/* Imagine decorativă sub titlu */
+.hero::before {
+  content: "";
+  display: block;
+  background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.firma-nume {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+/* Buton animat */
+.anim-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffeb3b;
+  color: #3cb043;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+
+.anim-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(60, 176, 67, 0.6);
+  background-color: #fdd835;
+}
+
+/* Footer cu umbră ușoară */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  bottom: auto;
+  width: auto;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
